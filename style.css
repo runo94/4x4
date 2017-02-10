@@ -1,0 +1,228 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+
+.cd-background-wrapper {
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  -webkit-perspective: 4000px;
+  perspective: 4000px;
+  height: 100%;
+  min-height: 838px;
+  z-index: 2;
+}
+
+.cd-floating-background {
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.cd-floating-background.is-absolute {
+  position: absolute;
+}
+.cd-floating-background img {
+  display: block;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* fixes a Firefox bug - images not correctly rendered*/
+  background-color: rgba(255, 255, 255, 0.01);
+}
+.cd-floating-background img:not(:first-child) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cd-floating-background img:first-child {
+
+}
+.cd-floating-background img:nth-child(2) {
+  -webkit-transform: translateZ(290px);
+  -ms-transform: translateZ(290px);
+  transform: translateZ(290px);
+  top: 30%;
+  left: 0;
+}
+.cd-floating-background img:nth-child(3) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(400px);
+  width: 6%;
+  top: 50%;
+  left: 50%;
+}
+.cd-floating-background img:nth-child(4) {
+  -webkit-transform: translateZ(400px);
+  -ms-transform: translateZ(400px);
+  transform: translateZ(400px);
+  width: 3%;
+  top: 40%;
+  left: 50%;
+}
+.no-preserve-3d .cd-floating-background {
+  /* we target browsers that don't support preserve-3d and show just a standard image - no effect visible */
+  position: relative;
+}
+
+.head_title {
+  position: absolute;
+  z-index: 9999999999999999999;
+  background: url('./img/titlebg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  top: 17%;
+  left: 16%;
+  padding: 30px 60px
+}
+
+.head_title h1 {
+  font-size: 35px;
+  font-weight: 900;
+  color: #fff;;
+}
+
+.head_title h2 {
+  font-size: 20px;
+  font-weight: 900;
+  font-style: italic; 
+  color: #fff;
+  margin: 10px 0;
+}
+
+.head_home .search {
+  position: absolute;
+  z-index: 9999999999999999999;
+  top: 45%;
+  left: 24.5%;
+}
+
+.head_home .search input[type="search"] {
+  padding: 17px;
+  width: 575px;
+}
+
+.head_home .search input[type="submit"] {
+  background:url(./img/search_btn.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  height: 60px;
+  width: 78px;
+}
+
+.sales {
+  margin-top: 33px;
+  margin-bottom: 33px; 
+}
+
+.sales img {
+  width: 100%;
+}
+
+.flexslider .image .name {
+  position: absolute;
+  top: 44%;
+  text-align: center;
+  z-index: 99;
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+    width: 347px;
+}
+
+.latest-news h3 {
+  text-align: center;
+}
+
+.bg-contact-us {
+  background: url(./img/bg-contact-us.jpg);
+  background-size: 100%;
+  background-position: center;
+  position: relative;
+  z-index: 4;
+  height: 883px;
+}
+
+.contact_us .title {
+  background: url(./img/patern-title-contact.png);
+  background-size: 100% 100%;
+  background-position: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 50px;
+}
+
+.contact_us .title h4 {
+  font-size: 30px;
+  font-weight: 900; 
+  text-align: center;
+  color: #fff;
+}
+
+.contact_us .title .search {
+  margin: 0 auto; 
+  padding: 23px 0;
+  width: 354px;
+}
+
+.contact_us .title .search input[type="search"] {
+  padding: 5px;
+  width: 310px;
+}
+
+.contact_us .title .search input[type="submit"] {
+  background:url(./img/search_btn.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  height: 36px;
+  width: 44px;
+}
+
+.contact_us .iphone img{
+  height: 534px;
+  margin: 20px 0 0;
+}
+
+.contact_us h5 {
+  font-size: 18px;
+  font-weight: 900; 
+  text-align: center;
+  color: #4d5059;
+}
+
+footer {/*
+  height: 534px;*/
+  width: 100%;
+  background: url(./img/footer.png);
+  background-size: 100% 130%;
+  background-position: center;
+  position: relative;
+  z-index: 5;
+  top: -14%;
+}
+
+footer .contact-info {
+  padding: 12% 0;
+}
+
+footer h5 {
+  font-size: 18px;
+  font-weight: 900; 
+  color: #fff;
+  padding: 5px 0;
+}
+
+footer span h5 {
+  font-size: 18px;
+  font-weight: 900; 
+  color: #4d5059;
+  padding: 30px 0 0;
+}

@@ -1,0 +1,46 @@
+.about .header {
+	background: url('../img/header_about.png');
+	background-size: 100% 100%;
+	background-position: center;
+	padding: 13% 0;
+}
+
+.about .header h3{
+	color: #fffcdf;
+	font-size: 30px;
+	font-weight: 900;
+	line-height: 40px;
+	text-shadow: 3px 0px 5px rgba(150, 150, 150, 1);
+	text-align: center;
+}
+
+.about .content {
+	background: url('../img/bg-about.png');
+	background-size: 100% 100%;
+	background-position: center;
+    margin: -70px 0 0;
+    padding: 200px 0;
+}
+
+.about .content h6 span {
+	color: #fbad48;
+	font-size: 20px;
+	font-weight: 900;
+	display: inline-block;
+}
+
+.about .content h6 {
+	color: #4d5059;
+	font-size: 16px;
+	font-weight: 900;
+	display: inline-block;
+}
+
+.about footer {
+	padding: 40px 0;
+	background:url('../img/map.png');
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+
