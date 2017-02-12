@@ -133,3 +133,13 @@ $(function(){
   });
   toggles.first().click();
 });
+
+jQuery(document).ready(function($){
+		$(".spoiler").click(function() {
+			$(this).find("img").toggleClass( "rotate");
+		});
+
+		$(".spoiler").click(function() {
+			$(this).find(".content").toggleClass( "in");
+		});
+	});
