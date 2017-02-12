@@ -160,6 +160,8 @@
 
 .category .sidebar .params-2 {
 	border:1px solid #eaeaea;
+    border-bottom: none;
+    border-top: none;
 }
 
 .category .sidebar .params-2 .spoiler {
@@ -169,9 +171,35 @@
 	font-size: 14px;
 }
 
+.category .sidebar .params-2 .spoiler:last-child {
+	border-bottom: none;
+}
+
 .category .sidebar .params-2 .spoiler img{
 	float: right;
 	padding: 5px 0;
+}
+
+.category .sidebar .params-2 .buttons {
+	margin: 30px auto;
+}
+
+.category .sidebar .params-2 a.show{
+	color: #fbad48;
+	padding: 10px;
+	border: 1px solid #fbad48; 
+	border-radius: 3px;
+    display: block !important;
+    float: left;
+}
+
+.category .sidebar .params-2 a.drop {
+	color: #aaaaaa;
+	padding: 10px;
+	border: 1px solid #aaaaaa; 
+	border-radius: 3px;
+    display: block !important;
+    float: right;
 }
 
 .rotate {
