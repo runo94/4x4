@@ -6,6 +6,7 @@ body {
 .menu {
   position: absolute;
   z-index: 99999;
+  width: 100%;
 }
 
 .menu .bg {
@@ -62,8 +63,8 @@ body {
   background-size: 100% 100%;
   margin: 0 0 10px 0;
   padding: 10px 0;
-  width: 212vh;
   position: relative;
+  width: 100%;
 }
 
 .navi ul li {
@@ -84,6 +85,34 @@ body {
 
 .navi ul li a img {
   width: 14px;
+}
+
+.cart-price {
+  padding: 10px 20px;
+  border-radius: 3px;
+  width: 150px;
+  background: #fafafa; 
+  text-align: center;
+  float: right;
+}
+
+.cart-price:after {
+  content: '';
+  position: absolute;
+  float: right;
+  border: 13px solid transparent;
+  border-bottom: 13px solid #fafafa;
+  top: -23px;
+  right: 34px;
+}
+
+.cart-price p {
+  font-weight: 700;
+  color: #fbad48;
+}
+
+.cart-price span {
+  color: #333;
 }
 
 .cd-background-wrapper {
@@ -228,6 +257,10 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 250px;
+}
+
+.prodacts_home {
+  margin: 20px 0;
 }
 
 .prodacts_home img {
