@@ -37,10 +37,49 @@
 }
 
 .about footer {
-	padding: 40px 0;
+    padding: 300px 0 30px;
 	background:url('../img/map.png');
 	background-size: 100% 100%;
 	background-position: center;
+    position: relative;
+    z-index: 999;
+    margin: -17% 0 0;
 }
 
+.about footer h4 {
+	font-size: 20px;
+	font-weight: 900;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px 0;
+}
 
+.about footer h3 {
+	font-size: 25px;
+	font-weight: 900;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px 0;
+}
+
+.about footer .social_buttons {
+	width: 186px;
+	margin: 0 auto;
+}
+
+.about footer .social_buttons img {
+	width: 59px;
+	padding: 175px 15px 30px;
+}
+
+.about footer p {
+	font-size: 12px;
+	font-weight: 900;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 20px 0;
+	border-top: 1px solid #fff;
+}

@@ -81,6 +81,7 @@ body {
 .navi ul li a {
   color: rgb(51, 51, 51);
   display: block;
+  text-transform: uppercase;
 }
 
 .navi ul li a img {
