@@ -230,3 +230,115 @@
 	margin-top: 1px;
 }
 
+.category.cart .bradcrumps {
+	padding-bottom: 20px;
+	border-bottom: 3px solid #f1f1ed;
+}
+
+.category.cart .bradcrumps ul li{
+	display: inline-block;
+	padding: 0 20px; 
+}
+
+.category.cart .bradcrumps ul li:after{
+	content: "";
+    width: 7px;
+    height: 12px;
+    background: url(../img/chevron_right.png);
+    background-position: center;
+    background-size: 100% 100%;
+    display: inline-block;
+    float: right;
+    margin: -15px -25px 0 0;
+}
+
+.category.cart .bradcrumps ul li:last-child:after {
+	display: none;
+}
+
+.category.cart .bradcrumps ul li h4{
+	font-size: 24px;
+	font-weight: 900;
+	color: #fbad48;
+}
+
+.category.cart  .remove img {
+	margin: 0 0 0 10px;
+}
+
+.category.cart .border {
+	border-bottom: 2px solid #f1f1ed;
+	padding:20px 15px;
+	min-height: 74px;
+}
+
+.category.cart .border span {
+	color: #fbad48;
+	font-size: 15px;
+	font-weight: 900;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.category.cart .price {
+	margin: 0;
+}
+
+.category.cart .quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 19px;
+  color: #43484D;
+  font-weight: 300;
+}
+ 
+.category.cart .quantity button[class*=btn] {
+  width: 30px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+.category.cart .minus-btn img {
+  margin-top: 2px;
+}
+.category.cart .quantity .plus-btn img {
+  margin-top: 2px;
+}
+ 
+.category.cart .quantity button:focus,
+.category.cart .quantity input:focus {
+  outline:0;
+}
+
+.category.cart  .price p{
+	font-size: 16px;
+	font-weight: 400;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.category.cart .promo label{
+	margin: 30px 10px 30px 0;
+}
+
+.category.cart .total-price {
+	padding: 50px 0;
+}
+
+.category.cart .total-price p {
+	font-size: 18px;
+	text-align: right;
+}
+
+.category.cart .total-price span {
+	font-weight: 900;
+	color: #54bc00;
+}
+
+.category.cart img.add_to_cart {
+	width: 100%;
+}
+
+.category.cart img.add_to_cart:hover {
+    opacity: .4;
+}
