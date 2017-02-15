@@ -17,13 +17,17 @@ body {
   padding: 15px 0;
 }
 
-.top-part h3 {
+.top-part a h3 {
   font-size: 30px;
   font-weight: 900;
   letter-spacing: -1px;
   padding: 2px 0 0;
   display: block;
   color: #fffcdf;
+  text-decoration: none;
+}
+.top-part a:active h3, .top-part a:focus h3 {
+  text-decoration: none;
 }
 
 .top-part a:hover {
