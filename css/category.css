@@ -342,3 +342,341 @@
 .category.cart img.add_to_cart:hover {
     opacity: .4;
 }
+.category.single_prod .bradcrumps {
+	padding-bottom: 20px;
+	border-bottom: 3px solid #f1f1ed;
+}
+
+.category.single_prod .bradcrumps ul li{
+	display: inline-block;
+	padding: 0 20px; 
+}
+
+.category.single_prod .bradcrumps ul li:after{
+	content: "";
+    width: 7px;
+    height: 12px;
+    background: url(../img/chevron_right.png);
+    background-position: center;
+    background-size: 100% 100%;
+    display: inline-block;
+    float: right;
+    margin: -15px -25px 0 0;
+}
+
+.category.single_prod .bradcrumps ul li:last-child:after {
+	display: none;
+}
+
+.category.single_prod .bradcrumps ul li h4{
+	font-size: 24px;
+	font-weight: 900;
+	color: #fbad48;
+}
+
+
+.category.single_prod .slider {
+	border: 1px solid rgb(219, 218, 207);
+	border-radius: 2px;
+    margin: 30px -15px;
+    padding: 50px 0; 
+}
+
+.category.single_prod .flexslider {
+    width: 300px;
+    margin: 22px auto !important;
+}
+
+.category.single_prod .flex-direction-nav a.flex-next {
+    background-image: url(../img/chevron_right_dark.png);
+    background-position: center;
+    background-size: 100% 100%;
+    outline: none;
+    color: rgba(0, 0, 0, 0) !important;
+    border: none;
+    box-shadow: none;
+    font-size: 0px;
+    text-shadow: none;
+    margin: -42px 0 0;
+}
+
+.category.single_prod .flex-direction-nav a.flex-prev {
+    background-image: url(../img/chevron_left_dark.png);
+    background-position: center;
+    background-size: 100% 100%;
+    outline: none;
+    color: rgba(0, 0, 0, 0) !important;
+    border: none;
+    box-shadow: none;
+    font-size: 0px;
+    text-shadow: none;
+    margin: -42px 0 0;
+}
+
+.category.single_prod .flex-direction-nav a {
+    width: 17px !important;
+    height: 33px !important;
+}
+
+.category.single_prod .flexslider:hover .flex-direction-nav .flex-next {
+	right: -62px;
+}
+
+.category.single_prod .flexslider:hover .flex-direction-nav .flex-prev {
+	left: -62px !important;
+}
+
+/* The switch - the box around the slider */
+.category.single_prod .switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+}
+
+/* Hide default HTML checkbox */
+.category.single_prod .switch input {display:none;}
+
+/* The slider */
+.category.single_prod .checkbox_slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.category.single_prod .checkbox_slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 4px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.category.single_prod input:checked + .checkbox_slider {
+  background-color: #54bc00;
+}
+
+.category.single_prod input:focus + .checkbox_slider {
+  box-shadow: 0 0 1px #54bc00;
+}
+
+.category.single_prod input:checked + .checkbox_slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.category.single_prod .checkbox_slider.round {
+  border-radius: 34px;
+}
+
+.category.single_prod .checkbox_slider.round:before {
+  border-radius: 50%;
+}
+
+.category.single_prod .testimonials .flexslider {
+    width: 80%;
+    margin: 22px auto !important;
+}
+
+.category.single_prod .testimonials .slider {
+	border-top: 1px solid rgb(219, 218, 207) !important;
+	border-radius: 2px;
+    margin: 15px 0;
+    border:none;
+    padding: 0;
+}
+
+.category.single_prod .testimonials .flex-direction-nav a.flex-next {
+    background-image: url(../img/chevron_right_dark.png);
+    background-position: center;
+    background-size: 100% 100%;
+    outline: none;
+    color: rgba(0, 0, 0, 0) !important;
+    border: none;
+    box-shadow: none;
+    font-size: 0px;
+    text-shadow: none;
+    margin: -15px 0 0 0;
+    opacity: 1;
+	right: -22px;
+}
+
+.category.single_prod .testimonials .flex-direction-nav a.flex-prev {
+    background-image: url(../img/chevron_left_dark.png);
+    background-position: center;
+    background-size: 100% 100%;
+    outline: none;
+    color: rgba(0, 0, 0, 0) !important;
+    border: none;
+    box-shadow: none;
+    font-size: 0px;
+    text-shadow: none;
+    margin: -15px 0 0 0;
+    opacity: 1;
+	left: -22px !important;
+}
+
+.category.single_prod .testimonials .flex-direction-nav a {
+    width: 8px !important;
+    height: 20px !important;
+}
+
+.category.single_prod .testimonials .flexslider:hover .flex-direction-nav .flex-next {
+	right: -22px;
+}
+
+.category.single_prod .testimonials .flexslider:hover .flex-direction-nav .flex-prev {
+	left: -22px !important;
+}
+
+.category.single_prod .testimonials .slider p {
+	font-size: 14px;
+}
+
+.category.single_prod .info {
+	margin: 30px -15px;
+}
+
+.category.single_prod .info h4 {
+	font-size: 24px;
+    font-weight: 900;
+    color: #fbad48;
+}
+
+.category.single_prod .info p {
+	font-size: 12px;
+    font-weight: 300;
+    padding:10px 0;
+}
+
+.category.single_prod .info p span{
+    color: #fbad48;	
+}
+
+.category.single_prod .info .btn img {
+	width: 100%;
+	background: 0;
+	padding:0;
+}
+
+.category.single_prod .info .btn:hover img {
+	opacity: .8;
+}
+
+.category.single_prod .info .boxes {
+	margin: 20px 0;
+}
+
+.category.single_prod .info .boxes p {
+	padding: 5px 0;
+}
+
+.category.single_prod .info .boxes .list-checkbox {
+	margin: 5px 0;
+}
+
+.category.single_prod .info .btn.buy {
+	margin: 20px 0;
+}
+
+.category.single_prod .testimonials .btn {
+	float: right;
+}
+
+.category.single_prod .testimonials .btn:hover {
+	opacity: .8;
+}
+
+.category.single_prod .social_buttons img {
+	float: right;
+	padding: 0 0 0 10px;
+	width: 40px;
+}
+
+.category.single_prod .product_info {
+	margin: 30px 0;
+}
+
+.category.single_prod .product_info .border {
+	border:1px solid #d6d6d6;
+    padding: 0 0 15px;
+    margin: 0 0 40px;
+}
+
+.category.single_prod .product_info h2{
+	font-size: 30px;
+	font-weight: 700;
+	color: #4d5059;
+	padding: 30px 0;
+}
+
+.category.single_prod .product_info .prod_gallery {
+	margin: 0 0 30px;
+}
+
+.category.single_prod .product_info .prod_gallery img{
+	width: 100%;
+	max-height: 360px;
+	max-width: 360px;
+	padding: 20px;
+}
+
+.category.single_prod .also {
+	text-align: center;
+	margin: 50px 0;	
+}
+
+.category.single_prod .also img.border {
+	width: 100%;
+}
+
+.category.single_prod .also a:hover {
+	text-decoration: none; 
+}
+
+.category.single_prod .also .border {
+	border:1px solid #d6d6d6;
+}
+
+.category.single_prod .also .border:hover {
+	border:1px solid #fbad48;
+}
+
+.category.single_prod .also h5 {
+    color: #3574a1;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 10px 0; 
+}
+
+.category.single_prod .also .rate {
+    margin: 10px auto;
+}
+
+.category.single_prod .also .on-sale {
+    font-size: 12px;
+    margin: 10px auto;
+}
+
+.category.single_prod .also .on-sale span {
+    color: #fbad48;
+}
+
+.category.single_prod .also .price h5{
+    font-size: 18px;
+    font-weight: 900;
+    color: #4d5059;
+    margin: 10px auto;
+}

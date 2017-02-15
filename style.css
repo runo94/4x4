@@ -26,6 +26,10 @@ body {
   color: #fffcdf;
 }
 
+.top-part a:hover {
+  text-decoration: none;
+}
+
 .top-part .logo img {
   width: 70%;
   position: absolute;
