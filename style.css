@@ -273,12 +273,17 @@ body {
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 .prodacts_home img:hover  {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+
 }
 
 .car_home {
@@ -395,11 +400,21 @@ body {
   font-size: 60px;
   font-weight: 900;
   padding: 0 0 20px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #fff;
+  margin: -44px 0 50px;
+  color: #fff;
 }
 
 .flexslider {
   margin: 0 !important;
+}
+
+.bg_home {
+  background: url(./img/bg-opt.png);
+  background-size: 100% 100%;
+  background-position: center;
+  margin: -90px 0 0;
+  padding: 100px 0 200px;
 }
 
 .slides .text {
@@ -408,6 +423,7 @@ body {
   margin: 0 auto;
   font-size: 14px;
   font-weight: 600;
+  color: #fff;
 }
 
 .slides .text span{
@@ -429,7 +445,7 @@ body {
 .view {
   width: 250px;
   height: 250px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   border: 5px solid #fff;
   overflow: hidden;
   position: relative;
@@ -441,14 +457,14 @@ body {
 }
 
 .view .name {
-    position: absolute;
-    top: 50%;
-    text-align: center;
-    z-index: 99;
-    font-size: 24px;
-    font-weight: 900;
-    width: 250px;
-    text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  z-index: 99;
+  font-size: 24px;
+  font-weight: 900;
+  width: 250px;
+  text-transform: uppercase;
 }
 
 .view .mask, .view .content {
@@ -533,6 +549,7 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   margin: 50px 0;
+  color: #fff;
 }
 
 .latest-news img{
@@ -557,6 +574,22 @@ body {
 .latest-news p {
   font-size: 14px;  
   line-height: 20px;
+  color: #fff;
+}
+
+.bg_car {
+  background: url(./img/bg-car.png);
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 150px 0;
+  z-index: 9999;
+  position: relative;
+  margin: -230px 0;
+}
+
+.bg_car .flexslider {
+  background: transparent;
+  border: none;
 }
 
 .bg-contact-us {
@@ -565,7 +598,8 @@ body {
   background-position: center;
   position: relative;
   z-index: 4;
-  height: 883px;
+  padding: 250px 0 300px;
+  margin: -250px 0;
 }
 
 .contact_us .title {
@@ -644,14 +678,377 @@ footer span h5 {
   padding: 30px 0 0;
 }
 
+.opt .content {
+  background: url(./img/bg-opt.png);
+  background-size: 100% 100%;
+  background-position: center;
+  margin: -90px 0 0;
+  padding: 100px 0 200px;
+}
+
+.opt footer {
+  height: 534px !important;
+  width: 100%;
+  background: url(./img/footer_opt_bg.png);
+  background-size: 100% 130%;
+  background-position: center;
+  position: relative;
+  z-index: 5;
+  margin: -129px 0 0;
+}
+
+.opt footer .contact-info {
+  padding: 12% 0;
+}
+
+.opt footer h5 {
+  font-size: 18px;
+  font-weight: 900; 
+  color: #fff;
+  padding: 5px 0;
+}
+
+.opt footer span h5 {
+  font-size: 18px;
+  font-weight: 900; 
+  color: #4d5059;
+  padding: 30px 0 0;
+}
+
+.opt .opt_header {
+  background: url('./img/bg-header-opt.png');
+  background-size: 100% 100%;
+  background-position: center;
+    padding: 14% 0 20%;
+    position: relative;
+    z-index: 1;
+}
+
+.opt .opt_header h2 {
+  text-align: center;
+  color: #fffcdf;
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.opt .opt_header h5 {
+  text-align: center;
+  color: #fffcdf;
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 20px 0 0; 
+}
+
+
+.opt .top_txt {
+  text-align: center;
+  font-weight: 900;
+  margin: 50px 0;
+}
+.opt .parts .part h3 {
+  font-size: 25px;
+  color: #fbad48;
+  font-weight: 900;
+  margin: 50px 0 10px;
+}
+
+.opt .parts .part ul {
+  margin: 10px 0;
+}
+
+.opt .parts .part ul li {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.opt .parts .part ul li:before {
+  background: #fbad48;
+  content: "";
+  width: 6px;
+  height: 5px;
+  top: -3px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  margin: 0 10px 0 0;
+}
+
+.opt .parts .part p {
+  font-size: 14px;
+}
+
+.opt .parts .part span {
+  font-size: 16px;
+  font-weight: 900;
+  color: #fbad48;
+}
+
+.service .service_header {
+  background: url('./img/bg-header-opt.png');
+  background-size: 100% 100%;
+  background-position: center;
+    padding: 14% 0 20%;
+    position: relative;
+    z-index: 1;
+}
+
+.service .service_header h2 {
+  text-align: center;
+  color: #fffcdf;
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.service .service_header h5 {
+  text-align: center;
+  color: #fffcdf;
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 20px 0 0; 
+}
+
+.service .content {
+  background: url(./img/bg-opt.png);
+  background-size: 100% 100%;
+  background-position: center;
+  margin: -90px 0 0;
+  padding: 100px 0 300px;
+}
+
+
+.service .top_txt {
+  text-align: center;
+  font-weight: 900;
+  margin: 50px 0;
+}
+.service .parts .part h3 {
+  font-size: 25px;
+  color: #fbad48;
+  font-weight: 900;
+  margin: 50px 0 10px;
+}
+
+.service .parts .part ul {
+  margin: 10px 0;
+}
+
+.service .parts .part ul li {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.service .parts .part ul li:before {
+  background: #fbad48;
+  content: "";
+  width: 6px;
+  height: 5px;
+  top: -3px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  margin: 0 10px 0 0;
+}
+
+.service .parts .part p {
+  font-size: 14px;
+}
+
+.service .parts .part span {
+  font-size: 16px;
+  font-weight: 900;
+  color: #fbad48;
+}
+
+.service .content img {
+  display: block;
+  position: absolute;
+  bottom: -322px;
+  right: 0;
+  width: 30%;
+  z-index: 9999999;
+}
+
+.service footer {
+  padding: 300px 0 30px;
+  background:url('./img/map.png');
+  background-size: 100% 100%;
+  background-position: center;
+  position: relative;
+  z-index: 999;
+  margin: -17% 0 0;
+}
+
+.service footer h4 {
+  font-size: 20px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+.service footer h3 {
+  font-size: 25px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+.service footer .social_buttons {
+  width: 186px;
+  margin: 0 auto;
+}
+
+.service footer .social_buttons img {
+  width: 59px;
+  padding: 175px 15px 30px;
+}
+
+.service footer p {
+  font-size: 12px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0;
+  border-top: 1px solid #fff;
+}
+
+
 @media screen and (min-width: 1439px) and (max-width: 1600px) {
   footer {
     margin: -441px 0 0;
+  }
+
+  .opt footer {
+    margin:  0;
   }
 }
 
 @media screen and (min-width: 1601px) {
   footer {
     margin: -600px 0 0;
+  }
+
+  .opt footer {
+    margin:  0;
+  }
+}
+
+@media screen and (max-width: 982px) {
+  .seccond_block {
+    display: none;
+  } 
+
+  .bg_home {
+    background: none;
+    background-size: 100% 100%;
+    background-position: center;
+    margin: -90px 0 0;
+    padding: 100px 0 200px;
+    color: #333;
+  }
+
+  .bg_car {
+    background: none;
+    background-size: 100% 100%;
+    background-position: center;
+    padding: 150px 0;
+    z-index: 9999;
+    position: relative;
+    margin: -230px 0;
+    color: #333;
+  }
+
+  .bg-contact-us {
+    background: none;
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+    z-index: 4;
+    padding: 250px 0 300px;
+    margin: -250px 0;
+    color: #333;
+  }
+
+  .slides .text {
+    color: #333;
+  }
+
+  .latest-news p {
+    color: #333;
+  }
+
+  .says h2 {
+    font-size: 40px;
+    color: #333;
+    border-bottom:1px solid #333;
+  }
+
+  .head_home .search {
+    position: relative;
+    top: initial;
+    left: initial;
+    z-index: auto;
+  }
+
+  .head_home .search input[type="search"] {
+    width: 70%
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .head_title {
+    top: initial;
+    left: initial;
+    position: relative;
+    z-index: auto;
+  }
+
+  .cd-floating-background.is-absolute {
+    position: relative;
+    top: initial;
+    left: initial;
+  }
+
+  .head_title h1 {
+    font-size: 30px;
+  }
+
+  .contact_us .title .search {
+    width: 80%;
+    margin: inherit;
+  }
+
+  .contact_us .title .search input[type="search"] {
+    width: 80%;
+  }
+
+  .contact_us .title {
+    margin: 0;
+  }
+
+  .contact_us .title h4 {
+    font-size: 18px;
+  }
+
+  footer {
+    margin: -300px 0 0;
+  }
+
+  .contact_us .iphone img {
+     margin: 20px 0 -80px;
+  }
+
+  .cd-background-wrapper {
+    min-height: initial;
   }
 }
