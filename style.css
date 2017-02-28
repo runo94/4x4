@@ -924,6 +924,19 @@ footer span h5 {
   border-top: 1px solid #fff;
 }
 
+/* PAGINATION */ 
+.s-paging-list { 
+text-align:center; 
+} 
+
+.s-paging-list li.selected { 
+font-weight: 700; 
+} 
+
+.s-paging-list li { 
+display: inline-block; 
+margin-left: 10px; 
+}
 
 @media screen and (min-width: 1439px) and (max-width: 1600px) {
   footer {
