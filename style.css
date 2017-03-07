@@ -268,8 +268,56 @@ body {
   width: 250px;
 }
 
+.seccond_block .car h4 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #fbad48;
+  background-image: none;
+  display: block;
+  padding: 10px 0;
+  transition: all 0.3s;
+  width: auto;
+  text-transform: uppercase;
+}
+
+.seccond_block .car h4 span {
+  font-size: 16px;
+  font-style: italic;
+  color: #333;
+  display: block;
+}
+
+.seccond_block .car p {
+  font-size: 14px;
+}
+
+.seccond_block .car a {
+  text-decoration: none;
+  color: #333;
+}
+
+.seccond_block .car a:href {
+  text-decoration: none;
+}
+
+.seccond_block .car .price {
+  margin: 10px 0;
+}
+
+.seccond_block .car .price span {
+  display: inline-block;
+  font-weight: 700;
+  color: #fbad48;  
+}
+
+.seccond_block .car .price p {
+  display: inline-block;
+  transition: all 0.3s;
+}
+
 .prodacts_home {
   margin: 20px 0;
+  transition: all 0.3s;
 }
 
 .prodacts_home img {
@@ -287,7 +335,6 @@ body {
   transform: scale(1.1);
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
-
 }
 
 .car_home {
@@ -301,103 +348,241 @@ body {
 }
 
 .light {
-  margin: -650px 0 0 282px;
+  margin: -650px 0 0 218px;
   position: absolute;
   width: 200px;
 }
 
-.light img {
-  width: 100%;
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+.light:after {
+  content: '';
+  width: 68px;
+  height: 158px;
+  background: url(./img/light.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  margin: -148px 0 0 195px;
 }
 
-.light img:hover  {
-  width: 100%;
+.light:hover h4, .light:hover:after  {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+  transition: all 0.3s;
 }
 
-.bag {
-  margin: -641px 0 0 582px;
+.bumper {
+  margin: -508px 0 0 757px;
   position: absolute;
   width: 233px;
 }
 
-.bag img {
-  width: 100%;
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+.bumper:before {
+  content: '';
+  width: 61px;
+  height: 158px;
+  background: url(./img/light.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  margin: 43px 0 0 -52px;
+  transform: scale(-1, 1); 
 }
 
-.bag img:hover  {
-  width: 100%;
+.bumper:hover h4 {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.bumper:hover:before {
+  -moz-transform: scale(-1.1, 1.1);
+  -webkit-transform: scale(-1.1, 1.1);
+  transform: scale(-1.1, 1.1);
+  transition: all 0.3s;  
+}
+
+.bag {
+  margin: -667px 0 0 634px;
+  position: absolute;
+  width: 233px;
+}
+
+.bag:before {
+  content: '';
+  width: 61px;
+  height: 158px;
+  background: url(./img/light.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  margin: 60px 0 0 -65px;
+  transform: scale(-1, 1); 
+}
+
+.bag:hover h4 {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.bag:hover:before {
+  -moz-transform: scale(-1.1, 1.1);
+  -webkit-transform: scale(-1.1, 1.1);
+  transform: scale(-1.1,1.1);
+  transition: all 0.3s;
 }
 
 .xz {
-    margin: -298px 0 0 605px;
+    margin: -274px 0 0 668px;
     position: absolute;
-    width: 274px;
+    width: 232px;
 }
 
-.xz img {
-  width: 100%;
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+.xz:before {
+  content: '';
+  width: 61px;
+  height: 158px;
+  background: url(./img/light.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  margin: -31px 0 0 -72px;
+  transform: scale(-1, -1); 
 }
 
-.xz img:hover  {
-  width: 100%;
+.xz:hover h4 {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+  transition: all 0.3s;
 }
+
+.xz:hover:before {
+  -moz-transform: scale(-1.1, -1.1);
+  -webkit-transform: scale(-1.1, -1.1);
+  transform: scale(-1.1, -1.1);
+  transition: all 0.3s;
+}
+
 
 .tires {
-  margin: -250px 0 0 461px;
+  margin: -152px 0 0 494px;
   position: absolute;
   width: 200px;
+  transform: scale(1.1);
 }
 
-.tires img {
-  width: 100%;
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+.tires:before {
+  content: '';
+  width: 61px;
+  height: 158px;
+  background: url(./img/light.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  margin: -83px 0 0 -48px;
+  transform: scale(-1, -1); 
 }
 
-.tires img:hover  {
-  width: 100%;
+.tires:hover h4  {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.tires:hover:before {
+  -moz-transform: scale(-1.1, -1.1);
+  -webkit-transform: scale(-1.1, -1.1);
+  transform: scale(-1.1, -1.1);
+  transition: all 0.3s;
 }
 
 .kord {
-  margin: -305px 0 0 174px;
+  margin: -487px 0 0 23px;
   position: absolute;
   width: 277px;
 }
 
-.kord img {
-  width: 100%;
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+
+.kord p {
+  width: 250px;
 }
 
-.kord img:hover  {
-  width: 100%;
+.kord .price p {
+  width: auto;
+}
+
+.kord:before {
+  content: '';
+  width: 61px;
+  height: 158px;
+  background: url(./img/light.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  margin: 50px 0 0 222px;
+  transform: scale(1, 1);
+}
+
+.kord:hover h4  {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.kord:hover:before {
+  -moz-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  transition: all 0.3s;
+}
+
+.suspender {
+  margin: -220px 0 0 128px;
+  position: absolute;
+  width: 277px;
+}
+
+.suspender:before {
+  content: '';
+  width: 61px;
+  height: 158px;
+  background: url(./img/light.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  margin: -94px 0 0 174px;
+  transform: scale(1, -1); 
+}
+
+.suspender:hover h4  {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.suspender:hover:before {
+  -moz-transform: scale(1.1, -1.1);
+  -webkit-transform: scale(1.1, -1.1);
+  transform: scale(1.1, -1.1);
+  transition: all 0.3s;
 }
 
 .says h2{
