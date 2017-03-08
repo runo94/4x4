@@ -44,6 +44,9 @@
 					<div class="col-lg-3 service-button">
 						<a href="#"><img src="./img/service-button.png"></a>
 					</div>
+					<div class="col-lg-3 skidka-button">
+						<a href="#"><img src="./img/salssl.png"></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -52,30 +55,58 @@
 			<div class="container">
 				<div class="col-lg-12">
 					<div class="row">
-					<div class="col-lg-2"></div>
 						<ul>
 							<li><a href="#">РАСПРОДАЖА</a></li>
 							<li><a href="#">МАГАЗИН</a></li>
-							<li><a href="#">ГАРАНТИЯ</a></li>
-							<li><a href="#">ОПЛАТА И ДОСТАВКА</a></li>
 							<li><a href="#">ОБМЕН И ВОЗВРАТ</a></li>
-							<li><a href="#">ОПТОВИКАМ</a></li>
 							<li><a href="#">О МАГАЗИНЕ</a></li>
 							<li><a href="#">БЛОГ</a></li>
-							<li><a href="#"><img src="./img/cart.png"></a></li>
+							<li><a href="#">
+								<img src="./img/cart.png">
+
+								<div class="cart-price">
+									<p>300000 <span>руб.</span></p>
+								</div>	
+
+						</a></li>
 						</ul>
+
+						
+
 					</div>
 				</div>
 			</div>		
 		</div>	
+
+					
+
 		<div class="container">
 			<div class="col-lg-12">
-				<div class="cart-price">
-					<p>300000 <span>руб.</span></p>
-				</div>	
+				
 			</div>
 		</div>
 	</div>
+	<div class="mobile_hamburger">
+				<button>
+					MENU
+				</button>
+				<ul>
+					<li><a href="#">РАСПРОДАЖА</a></li>
+					<li><a href="#">МАГАЗИН</a></li>
+					<li><a href="#">ОБМЕН И ВОЗВРАТ</a></li>
+					<li><a href="#">О МАГАЗИНЕ</a></li>
+					<li><a href="#">БЛОГ</a></li>
+					<li>
+						<a href="#">
+							<img src="./img/cart.png">
+
+							<div class="cart-price">
+								<p>300000 <span>руб.</span></p>
+							</div>	
+						</a>
+					</li>
+				</ul>
+			</div>
 	
 	<div class="cd-background-wrapper head_home">
 		<figure class="cd-floating-background">
@@ -113,7 +144,7 @@
 			<div class="col-lg-12">
 				<div class="col-lg-12">
 					<h3>ТОВАРЫ</h3>
-					<h4>ПЕРЕЙТИ В МАГАЗИН</h4>
+					<h4><a href="#">ПЕРЕЙТИ В МАГАЗИН</a></h4>
 				</div>
 			</div>
 			<div class="col-lg-2 prodacts_home">
@@ -336,10 +367,15 @@
 						<h4>
 							НЕ НАШЛИ <br> НУЖНУЮ ДЕТАЛЬ?
 						</h4>
-						<div class="search">
-							<input type="search" name="Search" placeholder="Начните вводить название детали"><input type="submit" name="submit" value=" ">
-						</div>
 					</div>
+						<div class="search">
+							<form>
+								<input type="text" name="name" placeholder="Имя">
+								<input type="text" name="telephone" placeholder="Телефон">
+								<input type="submit" name="Отправить" value="Отправить">
+							</form>
+						</div>
+						<div class="clearfix"></div>
 					<h5>Напишите нам в Whats App</h5>
 				</div>
 				<div class="col-lg-4 iphone animated fadeInRight">
@@ -416,5 +452,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>	
     <!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+	<script type="text/javascript">
+      	(function() {
+
+		  "use strict";
+
+		  var toggles = document.querySelectorAll(".c-hamburger");
+
+		  for (var i = toggles.length - 1; i >= 0; i--) {
+		    var toggle = toggles[i];
+		    toggleHandler(toggle);
+		  };
+
+		  function toggleHandler(toggle) {
+		    toggle.addEventListener( "click", function(e) {
+		      e.preventDefault();
+		      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+		    });
+		  }
+
+		})();
+    </script>
+
+    <script type="text/javascript">
+    	jQuery(document).ready(function($){
+    		$('.mobile_hamburger button').on('click', function(){
+    			$('.mobile_hamburger ul').toggle();
+    		})
+    	});
+    </script>
 </body>
 </html>
