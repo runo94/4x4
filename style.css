@@ -953,9 +953,9 @@ footer span h5 {
   background: url('./img/bg-header-opt.png');
   background-size: 100% 100%;
   background-position: center;
-    padding: 14% 0 20%;
-    position: relative;
-    z-index: 1;
+  padding: 14% 0 20%;
+  position: relative;
+  z-index: 1;
 }
 
 .opt .opt_header h2 {
@@ -1170,6 +1170,124 @@ margin-left: 10px;
 
 .mobile_hamburger {
   display: none;
+}
+
+.delivery .delivery_header {
+  background: url('./img/bg-header-deliver.png');
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 14% 0 20%;
+  position: relative;
+  z-index: 1;
+}
+
+.delivery .content {
+  background: url(./img/bg-opt.png);
+  background-size: 100% 100%;
+  background-position: center;
+  margin: -90px 0 0;
+  padding: 100px 0 200px;
+}
+
+.delivery .delivery_header h2 {
+  text-align: center;
+  color: #fffcdf;
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.delivery .top_txt {
+  text-align: center;
+  font-weight: 900;
+  margin: 50px 0;
+}
+
+.delivery .butn button {
+  background: url(./img/popup_btn.png);
+  border:none;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: transparent;
+  width: 200px;
+  height: 35px;
+  margin: 50px auto;
+  display: block; 
+}
+
+.delivery .butn button:hover {
+  opacity: 0.9;
+}
+
+.delivery .text_part-one h5 {
+  font-size: 20px;
+  color: #fbad48;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.delivery .text_part-one h6 {
+  font-size: 16px;
+  color: #333;
+  font-weight: 900;
+}
+
+.delivery .text_part-one ul {
+  padding: 20px 0 20px 20px;
+}
+
+.delivery footer {
+  margin: 0;
+}
+
+.delivery .text_part-two h4 {
+  font-size: 30px;  
+  color: #fbad48;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.delivery .text_part-three h4 {
+  font-size: 30px;  
+  color: #fbad48;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.delivery .text_part-two span {
+  font-weight: 900;
+}
+
+.delivery .text_part-three {
+  padding: 50px 0;
+}
+
+.delivery .text_part-three ul li {
+  padding: 10px 0;
+}
+
+.delivery .text_part-four {
+  background: url(./img/delivery_bg.png);
+  background-size: 100% 100%;
+  background-position: center;
+  margin: 90px 0 -320px;
+  padding: 200px 0 250px;
+  color: #fff;
+}
+
+.delivery .text_part-four span {
+  font-weight: 900;
+}
+
+.delivery .text_part-four h4 {
+  background: url(./img/xzzsas.png);
+  font-size: 20px;
+  font-weight: 900;
+  padding: 10px 30px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 100% 100%;
+  width: 200px;
 }
 
 @media screen and (min-width: 1439px) and (max-width: 1600px) {
