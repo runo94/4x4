@@ -1310,6 +1310,56 @@ margin-left: 10px;
   }
 }
 
+@media screen and (max-width: 1199px) {
+
+  .mobile_hamburger {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    text-align: center;
+    background: #fff;
+  }
+
+  .mobile_hamburger ul {
+    display: none;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .mobile_hamburger ul li {
+    padding: 10px 0;
+  }
+
+  .mobile_hamburger button {
+    background: transparent;
+    background-size: 100% 100%;
+    background-position: center;
+    border: none;
+    width: 100px;
+    box-shadow: inset 0 0 0 30px #fbad48;
+    transition: all 0.4s ease .4s;
+    padding: 15px 0;
+    color: #fff;
+  }
+
+  .mobile_hamburger button:hover {
+    box-shadow: inset 0 0 0 3px #fbad48;
+    color: #fbad48;
+    transition: all 0.2s ease .2s;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .prodacts_home {
+    display: none;
+  }
+
+}
+
 @media screen and (max-width: 982px) {
   .seccond_block {
     display: none;
